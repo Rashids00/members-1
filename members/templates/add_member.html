@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>Add New Member</h1>
+<form method="POST" action="/members/savemember/">  
+    {% csrf_token %}
+    {{ form.as_p }}        
+    <p><button type="submit">Save</button></p>
+</form>
+
+<p>Back to <a href="/members">Members</a></p>
+
+</body>
+</html>
